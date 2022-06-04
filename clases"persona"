@@ -1,0 +1,31 @@
+class Persona {
+    constructor(nombre, edad, identificacion) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.numero = identificacion;
+    }
+    set crearnombre(nombrecompleto,){
+        this.nombre=nombrecompleto;
+        
+    }
+    set crearedad(mayordeedad){
+        this.edad=mayordeedad;
+    }
+    get mostrarnombre(){
+        return this.nombre;
+    }
+    get mostraredad(){
+        return this.edad
+    }
+    mostrar(){
+        console.log("este es el nombre: "+this.nombre+"esta es la edad:"+this.edad+"este es numero de identificacion:"+this.numero)
+    }
+}
+let Usuario=new Persona("maria","23","1002937581");
+Usuario.nombre="erika"
+Usuario.crearnombre;
+Usuario.crearedad;
+Usuario.mostrarnombre;
+Usuario.mostraredad;
+Usuario.mostrar();
+console.log(Usuario.crearnombre)
